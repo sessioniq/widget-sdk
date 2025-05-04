@@ -1,6 +1,6 @@
 {
   "name": "@sessioniq/widget-sdk",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "SessionIQ Widget SDK",
   "private": false,
   "license": "MIT",
@@ -29,7 +29,9 @@
   "scripts": {
     "lint": "eslint src --ext .ts,.tsx,.vue",
     "typecheck": "tsc --noEmit",
-    "build": "tsc --build --force",
+    "build:esm": "tsc --project tsconfig.json",
+    "build:cjs": "tsc --project tsconfig.cjs.json && mv dist/index.js dist/index.cjs",
+    "build": "pnpm run clean && pnpm run build:cjs && pnpm run build:esm",
     "clean": "rimraf dist *.tsbuildinfo",
     "prepublishOnly": "pnpm run build",
     "patch": "pnpm version patch",
