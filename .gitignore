@@ -1,0 +1,104 @@
+# Dependencies
+node_modules
+.pnpm-store
+
+# Build outputs
+dist
+build
+out
+.next
+.nuxt
+.output
+
+# Testing
+coverage
+.nyc_output
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editor directories and files
+.idea
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Turbo
+.turbo
+.turbo-cache
+.turbo-cache-*
+
+# TypeScript
+*.tsbuildinfo
+
+# Cache
+.cache
+.eslintcache
+.stylelintcache
+
+# Temporary files
+*.tmp
+*.temp
+.temp
+
+# Package-specific
+# Vue
+.nuxt
+.output
+dist-ssr
+*.local
+
+# Cypress
+cypress/videos
+cypress/screenshots
+cypress/downloads
+packages/**/cypress/screenshots
+packages/**/cypress/videos
+packages/**/cypress/downloads
+
+# Vitest
+vitest.config.ts.timestamp-*
+
+# Storybook
+storybook-static
+
+# Playwright
+/test-results/
+/playwright-report/
+/playwright/.cache/
+
+# Misc
+.vercel
+.netlify
+
+# Supabase CLI metadata
+supabase/.branches/
+
+# direnv
+.direnv
+
+# pre-commit
+.pre-commit-config.yaml

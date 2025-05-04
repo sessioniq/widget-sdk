@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "declaration": true,
+    "skipLibCheck": true,
+    "types": ["@sessioniq/client-sdk"]
+  },
+  "include": ["src/**/*.ts", "src/**/*.d.ts"],
+  "exclude": ["node_modules", "dist"],
+  "references": []
+}
